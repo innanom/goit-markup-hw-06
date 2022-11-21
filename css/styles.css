@@ -220,6 +220,7 @@ button {
 /*Section*/
 
 .section {
+    padding-top: 94px;
     padding-bottom: 94px;
 }
 .section-title {
@@ -236,11 +237,11 @@ button {
 
 
 /* Features */
-.section-feature {
+/* .section-feature {
     padding-top: 94px;
     padding-bottom: 94px;
     
-}
+} */
 
 .feature-list {
     display: flex;
@@ -303,6 +304,9 @@ button {
 
 /* What are we doing? */
 /* Чим займаємося */
+.section-devices {
+    padding-top: 0;
+}
 .device {
     position: relative;
     padding-top: 0;
@@ -343,7 +347,7 @@ button {
 /* Наша команда */
 .section-our-team {
     background-color: var(--color-bg-btn-filters);
-    padding-bottom: 94px;
+    /* padding-bottom: 94px; */
 }
 .our-team {
     display: flex;
@@ -795,8 +799,10 @@ transition: fill var(--anima-fast);
     background: var(--primary-color);
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
-    
-    
+     transition: fill var(--anima-fast);
+}
+.btn-close:hover {
+    fill: var(--accent-color);
 }
 .modal-title {
     display: block;
@@ -814,11 +820,14 @@ transition: fill var(--anima-fast);
     margin-bottom: 20px;
 }
 .modal-form-label {
+    display: block;
+    margin-bottom: 4px;
+
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.01em;
 
-    margin-bottom: 15px;
+    
     
     color:var(--primary-text-color);
 }
